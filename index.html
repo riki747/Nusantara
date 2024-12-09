@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kekayaan Samudera dan Budaya Nusantara</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
     <header>
         <div class="header-container">
             <h1>
-                <img src="img/Nusantara-Logo-Vector.jpg" alt="Pakaian Adat" height="60px" width="130px">
+                <img src="/img/Nusantara-Logo-Vector.jpg" alt="Pakaian Adat" height="60px" width="130px">
             </h1>
             <nav>
                 <ul>
@@ -34,20 +34,29 @@
     <section id="beranda">
         <div class="hero">
             <video autoplay loop muted playsinline>
-                <source src="vidio/vidio beground.mp4" type="video/mp4">
+                <source src="vidio\vidio beground.mp4" type="video/mp4">
             </video>
 
 
             <div class="content">
                 <div class="welcome">
-                    <h1>Selamat Datang di Website Kami</h1>
-                    <h3>Eksplorasi keindahan bersama kami.</h3>
-                    <p>Hari Nusantara adalah perayaan tentang pentingnya persatuan dan kesatuan dalam keberagaman budaya,
-                        suku, dan adat istiadat Indonesia yang beraneka ragam.</p>
+                    <h2>Hari Nusantara: Menyatu dalam Keberagaman</h2>
+                    <p>Hari Nusantara adalah momen spesial yang merayakan kekuatan persatuan dalam keragaman budaya,
+                        suku, dan adat istiadat Indonesia. Dari Sabang hingga Merauke, Indonesia hadir dalam keberagaman
+                        yang luar biasa.Lebih dari sekedar mengenal budaya, Hari Nusantara mengajak kita untuk merayakan
+                        keindahan
+                        kekayaan budaya yang ada di seluruh penjuru tanah air. Bersama-sama kita menyatukan semangat
+                        kebersamaan dalam sebuah harmoni yang indah.
+                    </p>
+
                 </div>
                 <!-- <h2>Persatuan dalam Keberagaman</h2> -->
-                <h4>Selengkapnya</h4>
+
             </div>
+            <div class="button-container1">
+                <a href="#budaya"><button type="button" class="button">Expore Now</button></a>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -62,8 +71,9 @@
                 menjadikan Indonesia sebagai negara kepulauan terbesar di dunia. Hari Nusantara merayakan pentingnya
                 kesatuan maritim dan kedaulatan wilayah Indonesia.</p>
             <div class="img-Deklarasi">
-                <img src="img/Isi-Deklarasi-Djuanda.jpg" alt="Deklarasi-Djuanda" height="300px">
+                <img src="img\Isi-Deklarasi-Djuanda.jpg" alt="Deklarasi-Djuanda" height="400px">
             </div>
+            <p1>gambar Deklarasi-Djuanda-pada 13 Desember 1957.</p1>
 
         </div>
 
@@ -74,56 +84,63 @@
         <div class="budaya">
             <h2>Budaya & Tradisi</h2>
         </div>
-    
+        <form class="d-flex search-left" role="search" onsubmit="searchData(event)">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        
+
         <div class="budaya-grid">
             <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
+                <a href="jawabarat.html" target="_blank" rel="noopener noreferrer">
+                    <img src="img\Jawa Barat.jpg" alt="Tari Tradisional">
+                    <div class="text">Jawa Barat</div>
+                </a>
+            </div>
+
+            <div class="budaya-item">
+                <a href="jawatengah.html" target="_blank" rel="noopener noreferrer">
+                    <img src="img\jawa tengah.jpg" alt="">
+                    <div class="text">Jawa Tengah</div>
+                </a>
+            </div>
+
+            <div class="budaya-item" id="jawa-timur">
+                <img src="img/Jawa Timur.jpg" alt="Jawa Timur">
+                <div class="text">Jawa Timur</div>
+            </div>
+            <div class="budaya-item">
+                <a href="bali.html" target="_blank" rel="noopener noreferrer">
                     <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
+                    <div class="text">Bali</div>
                 </a>
             </div>
             <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
-                    <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
+                <a href="Aceh.html" target="_blank" rel="noopener noreferrer">
+                    <img src="img\aceh.JPG" alt="">
+                    <div class="text">Aceh</div>
                 </a>
             </div>
             <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
-                    <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
+                <a href="kalimantan_barat.html" target="_blank" rel="noopener noreferrer">
+                    <img src="img\kalimantan barat.jpg" alt="">
+                    <div class="text">Kalimantan Barat</div>
                 </a>
             </div>
             <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
-                    <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
+                <a href="kalimantan_timur.html" target="_blank" rel="noopener noreferrer">
+                    <img src="img\kalimantan timur.jpg" alt="">
+                    <div class="text">Kalimantan Timur</div>
                 </a>
             </div>
             <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
-                    <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
+                <a href="Sumatera_barat.html" target="_blank" rel="noopener noreferrer">
+                    <img src="img\sumatera barat.jpeg" alt="">
+                    <div class="text">Sumatra Barat</div>
                 </a>
             </div>
-            <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
-                    <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
-                </a>
-            </div>
-            <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
-                    <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
-                </a>
-            </div>
-            <div class="budaya-item">
-                <a href="Jateng.html" target="_blank" rel="noopener noreferrer">
-                    <img src="img/Tari Kecak.jpg" alt="Tari Tradisional">
-                    <div class="text">Jateng</div>
-                </a>
-            </div>
+
+        </div>
         </div>
     </section>
 
@@ -234,6 +251,35 @@
             </ul> -->
         </div>
     </footer>
+    <script>
+        function searchData(event) {
+            event.preventDefault(); // Mencegah reload halaman
+    
+            // Ambil input pencarian
+            const query = document.getElementById("searchInput").value.trim().toLowerCase();
+    
+            // Daftar semua elemen konten
+            const items = document.querySelectorAll(".budaya-item");
+    
+            // Sembunyikan semua elemen terlebih dahulu
+            items.forEach((item) => {
+                item.classList.add("hidden");
+            });
+    
+            // Cari elemen yang sesuai dengan input
+            const targetId = query.replace(" ", "-"); // Ganti spasi dengan tanda '-' untuk mencocokkan id
+            const targetElement = document.getElementById(targetId);
+    
+            if (targetElement) {
+                // Jika ditemukan, tampilkan elemen tersebut
+                targetElement.classList.remove("hidden");
+            } else {
+                // Jika tidak ditemukan, beri notifikasi
+                alert("Data tidak ditemukan!");
+            }
+        }
+    </script>
+    
 </body>
 
 </html>
